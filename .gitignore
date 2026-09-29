@@ -1,0 +1,11 @@
+# Runtime caches: the workflow downloads fresh model files on each run.
+data_cache/*.grib2
+
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# Local logs
+*.log

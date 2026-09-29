@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الأمطار التراكمية — حضرموت وخليج عدن | تصميم: أحمد عمر ظافر</title>
+<style>
+  body{font-family:'Segoe UI',Tahoma,Arial,sans-serif;background:#f2f5f8;color:#1c2733;margin:0;padding:24px}
+  header{background:#0b3d66;color:#fff;border-radius:12px;padding:18px 22px;margin-bottom:18px}
+  header h1{margin:0 0 6px;font-size:22px}
+  header .sub{font-size:13px;opacity:.9}
+  .card{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.12);padding:16px 18px;margin-bottom:18px}
+  .card h2{margin:0 0 10px;font-size:17px;color:#0b3d66}
+  .fresh{font-size:13.5px;line-height:1.9}
+  .fresh b{color:#0b3d66}
+  .stats{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0}
+  .stat{background:#eef4fa;border-radius:8px;padding:8px 14px;font-size:13px}
+  .stat b{display:block;font-size:16px;color:#0b3d66}
+  img{width:100%;border-radius:8px;border:1px solid #d5dde5;display:block}
+  a{color:#0b62a8}
+  .links{font-size:13px;margin-top:10px}
+  footer{font-size:12.5px;color:#5a6b7c;text-align:center;margin-top:8px}
+</style>
+</head>
+<body>
+<header>
+  <h1>إجمالي الأمطار التراكمية — حضرموت وخليج عدن</h1>
+  <div class="sub">دمج متعدد النماذج (MME): الأمريكي GFS 40% · الأوروبي ECMWF 30% · الكندي GEM 20% · الألماني ICON 10% &nbsp;|&nbsp; تصميم: أحمد عمر ظافر</div>
+</header>
+
+<div class="card fresh">
+  <h2>آخر تحديث للبيانات</h2>
+  <div>
+    زمن إنشاء المنتج: <b>2026-09-28 17:32 UTC</b><br>
+    الأمريكي GFS: دورة <b>2026-09-28 12Z</b> (قبل 5.5 ساعة) — نافذة 09-28 12Z→+24h<br>
+    الأوروبي ECMWF: دورة <b>2026-09-28 06Z</b> (قبل 11.5 ساعة) — نافذة 09-28 06Z→+24h<br>
+    الكندي GEM والألماني ICON: أحدث دورة متاحة عبر Open-Meteo — نافذة 2026-09-28 00Z→+24h<br>
+    نافذة توقعات 10 أيام (النماذج الأربعة عبر Open-Meteo): <b>2026-09-28 → 2026-10-07</b>
+  </div>
+</div>
+
+<div class="card">
+  <h2>خريطة 24 ساعة القادمة (2026-09-28 00Z → +24h)</h2>
+  <div class="stats">
+    <div class="stat">أقصى مجموع MME<b>8.92 ملم</b>عند 11.00°ش، 54.30°شر</div>
+    <div class="stat">المتوسط المجالي<b>0.21 ملم</b></div>
+    <div class="stat">نسبة المساحة الممطرة<b>14.8%</b></div>
+  </div>
+  <img src="hadramout_mme_precip_24h.png" alt="خريطة الأمطار التراكمية 24 ساعة">
+  <div class="links">
+    <a href="hadramout_mme_precip_24h.png" download>تنزيل الخريطة PNG</a> ·
+    <a href="hadramout_mme_stations_24h.csv">جدول المحطات CSV</a>
+  </div>
+</div>
+
+<div class="card">
+  <h2>إجمالي الأمطار التراكمية 10 أيام قادمة (2026-09-28 → 2026-10-07)</h2>
+  <div class="stats">
+    <div class="stat">أقصى مجموع MME<b>55.00 ملم</b>عند 15.00°ش، 43.50°شر</div>
+    <div class="stat">المتوسط المجالي<b>3.41 ملم</b></div>
+    <div class="stat">نسبة المساحة الممطرة<b>63.0%</b></div>
+  </div>
+  <img src="hadramout_mme_precip_10d.png" alt="خريطة الأمطار التراكمية 10 أيام">
+  <div class="links">
+    <a href="hadramout_mme_precip_10d.png" download>تنزيل الخريطة PNG</a> ·
+    <a href="hadramout_mme_stations_10d.csv">جدول المحطات CSV</a>
+  </div>
+</div>
+
+<div class="card">
+  <h2>التقرير الكامل</h2>
+  <div class="links"><a href="mme_report.txt">mme_report.txt — تفاصيل الدورات والإحصاءات والحداثة</a></div>
+</div>
+
+<footer>المصادر: ECMWF Open Data · NOAA GFS · DWD ICON · MSC GEM عبر Open-Meteo | شبكة 0.10° | للأغراض البحثية والإرشاد الهيدرولوجي فقط</footer>
+</body>
+</html>
