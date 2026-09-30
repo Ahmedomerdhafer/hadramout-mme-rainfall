@@ -1,54 +1,54 @@
 ==============================================================================
  Multi-Model Super-Ensemble (MME) — Hadramout / Gulf of Aden — 24h Rainfall
 ==============================================================================
-Generated (UTC) : 2026-09-29 03:28:14
+Generated (UTC) : 2026-09-30 03:25:02
 Domain          : lon [42.0, 56.0]  lat [10.0, 20.0]
 Target grid     : 0.1° -> 101 x 141 (14241 node)
-Run time        : 395.4 s
+Run time        : 440.0 s
 Noise threshold : values < 0.2 mm set to 0
 
 -- Model provenance --------------------------------------------------------
-  GFS    w=0.40  run=20260928/12Z     param=tp   step=0-24   units=kg m**-2 window=09-28 12Z→+24h     max=   5.27 mm  mean= 0.20 mm  wet%= 12.7
-  ECMWF  w=0.30  run=20260928/12Z     param=tp   step=0-24   units=m       window=09-28 12Z→+24h     max=  41.08 mm  mean= 0.38 mm  wet%= 14.6
-  GEM    w=0.20  run=Open-Meteo/gem_seamless param=tp   step=0-24   units=mm      window=2026-09-29 00Z→+24h max=  22.50 mm  mean= 0.65 mm  wet%= 12.7
-  ICON   w=0.10  run=Open-Meteo/icon_seamless param=tp   step=0-24   units=mm      window=2026-09-29 00Z→+24h max=  17.70 mm  mean= 0.22 mm  wet%= 15.3
+  GFS    w=0.40  run=20260929/12Z     param=tp   step=0-24   units=kg m**-2 window=09-29 12Z→+24h     max=  28.38 mm  mean= 0.45 mm  wet%= 12.8
+  ECMWF  w=0.30  run=20260929/12Z     param=tp   step=0-24   units=m       window=09-29 12Z→+24h     max=  19.19 mm  mean= 0.33 mm  wet%= 17.8
+  GEM    w=0.20  run=Open-Meteo/gem_seamless param=tp   step=0-24   units=mm      window=2026-09-30 00Z→+24h max=  15.40 mm  mean= 0.37 mm  wet%= 15.5
+  ICON   w=0.10  run=Open-Meteo/icon_seamless param=tp   step=0-24   units=mm      window=2026-09-30 00Z→+24h max=   5.70 mm  mean= 0.16 mm  wet%= 15.9
 
 -- Ensemble statistics -----------------------------------------------------
-  max  = 15.69 mm   at lat 11.00, lon 54.00
-  mean = 0.34 mm  (over full domain)
-  wet fraction = 15.4 % of domain
-  areal mean over wet cells = 2.18 mm
+  max  = 14.67 mm   at lat 10.00, lon 52.30
+  mean = 0.35 mm  (over full domain)
+  wet fraction = 15.0 % of domain
+  areal mean over wet cells = 2.31 mm
 
 -- Station values (mm / 24h) ----------------------------------------------
   Station              GFS   ECMWF     GEM    ICON      MME
-  Al-Mukalla          0.04    0.02    0.00    0.00     0.00
-  Al-Dhabba Port      0.00    0.01    0.00    0.00     0.00
+  Al-Mukalla          0.00    0.10    0.00    0.00     0.00
+  Al-Dhabba Port      0.00    0.00    0.00    0.00     0.00
   Ash-Shihr           0.00    0.01    0.00    0.00     0.00
   Sayun               0.00    0.00    0.00    0.00     0.00
   Tarim               0.00    0.00    0.00    0.00     0.00
   Wadi Doan           0.00    0.00    0.00    0.00     0.00
-  Wadi Huwayrah       0.00    0.01    0.00    0.00     0.00
+  Wadi Huwayrah       0.00    0.00    0.00    0.00     0.00
 
 -- 10-Day ensemble (Day 0 → Day 9) -------------------------------------------
-  window   = 2026-09-29 → 2026-10-08 (10 UTC days)
-  max      = 55.10 mm at lat 14.00, lon 44.00
-  mean     = 3.66 mm over domain | wet% = 63.3
-  map      = /tmp/tmp.Jnru0q99jN/repo/outputs/hadramout_mme_precip_10d.png
-  csv      = /tmp/tmp.Jnru0q99jN/repo/outputs/hadramout_mme_stations_10d.csv
+  window   = 2026-09-30 → 2026-10-09 (10 UTC days)
+  max      = 87.41 mm at lat 14.40, lon 48.20
+  mean     = 12.69 mm over domain | wet% = 87.6
+  map      = /tmp/hadramout-mme-rainfall.Ia8pEp/repo/outputs/hadramout_mme_precip_10d.png
+  csv      = /tmp/hadramout-mme-rainfall.Ia8pEp/repo/outputs/hadramout_mme_stations_10d.csv
 
 -- Data freshness (آخر تحديث البيانات) ---------------------------------------
-Data freshness @ 2026-09-29 03:28 UTC :
-  GFS   : run 2026-09-28 12Z  (age 15.5 h)  window 09-28 12Z→+24h
-  ECMWF : run 2026-09-28 12Z  (age 15.5 h)  window 09-28 12Z→+24h
-  GEM   : Open-Meteo/gem_seamless — أحدث دورة متاحة عبر Open-Meteo  window 2026-09-29 00Z→+24h
-  ICON  : Open-Meteo/icon_seamless — أحدث دورة متاحة عبر Open-Meteo  window 2026-09-29 00Z→+24h
+Data freshness @ 2026-09-30 03:25 UTC :
+  GFS   : run 2026-09-29 12Z  (age 15.4 h)  window 09-29 12Z→+24h
+  ECMWF : run 2026-09-29 12Z  (age 15.4 h)  window 09-29 12Z→+24h
+  GEM   : Open-Meteo/gem_seamless — أحدث دورة متاحة عبر Open-Meteo  window 2026-09-30 00Z→+24h
+  ICON  : Open-Meteo/icon_seamless — أحدث دورة متاحة عبر Open-Meteo  window 2026-09-30 00Z→+24h
   10-Day outlook sources:
-    GFS   : Open-Meteo/gfs_seamless  window 2026-09-29 → 2026-10-08
-    ECMWF : Open-Meteo/ecmwf_ifs025  window 2026-09-29 → 2026-10-08
-    GEM   : Open-Meteo/gem_seamless  window 2026-09-29 → 2026-10-08
-    ICON  : Open-Meteo/icon_seamless  window 2026-09-29 → 2026-10-08
+    GFS   : SYNTHETIC/GFS  window n/a
+    ECMWF : Open-Meteo/ecmwf_ifs025  window 2026-09-30 → 2026-10-09
+    GEM   : Open-Meteo/gem_seamless  window 2026-09-30 → 2026-10-09
+    ICON  : Open-Meteo/icon_seamless  window 2026-09-30 → 2026-10-09
 
 -- Outputs -----------------------------------------------------------------
-  map : /tmp/tmp.Jnru0q99jN/repo/outputs/hadramout_mme_precip_24h.png
-  csv : /tmp/tmp.Jnru0q99jN/repo/outputs/hadramout_mme_stations_24h.csv
+  map : /tmp/hadramout-mme-rainfall.Ia8pEp/repo/outputs/hadramout_mme_precip_24h.png
+  csv : /tmp/hadramout-mme-rainfall.Ia8pEp/repo/outputs/hadramout_mme_stations_24h.csv
 ==============================================================================
