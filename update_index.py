@@ -10,7 +10,8 @@ gfs = re.search(r"GFS\s+: run (\S+ \S+Z)\s+\(age\s+([\d.]+) h\)\s+window (\S+ \S
 ecm = re.search(r"ECMWF\s+: run (\S+ \S+Z)\s+\(age\s+([\d.]+) h\)\s+window (\S+ \S+)", rep)
 ens = re.search(r"max\s+=\s+([\d.]+) mm\s+at lat ([\d.]+), lon ([\d.]+)\s*\n\s*mean = ([\d.]+) mm[^\n]*\n\s*wet fraction = ([\d.]+)", rep)
 d10 = re.search(r"10-Day ensemble.*?max\s+=\s+([\d.]+) mm at lat ([\d.]+), lon ([\d.]+)\s*\n\s*mean\s+=\s+([\d.]+) mm over domain \| wet% = ([\d.]+)", rep, re.S)
-w10 = re.search(r"window\s+= ([0-9]{4}-[0-9]{2}-[0-9]{2}) → ([0-9]{4}-[0-9]{2}-[0-9]{2})", rep)
+# يقبل كلا الشكلين: "window = ..." و"window ..." في تقرير الحداثة.
+w10 = re.search(r"window\s*(?:=\s*)?([0-9]{4}-[0-9]{2}-[0-9]{2})\s+→\s+([0-9]{4}-[0-9]{2}-[0-9]{2})", rep)
 gem = re.search(r"GEM\s+: Open-Meteo/\S+[^\n]*window (\S+ \S+)", rep)
 html = re.sub(r"زمن إنشاء المنتج: <b>[^<]*</b>", f"زمن إنشاء المنتج: <b>{ts}</b>", html)
 html = re.sub(r"والألماني ICON: أحدث دورة متاحة عبر Open-Meteo — نافذة [^<]+",
